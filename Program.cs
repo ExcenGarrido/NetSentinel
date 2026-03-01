@@ -36,7 +36,7 @@ namespace NetSentinel
                         File.WriteAllText(archivoLog, "--- INICIO DE AUDITORIA DE RED ---\n");
                     }
 
-                    File.AppendAllText(archivoLog, "Falla detectada en: " + ipObjetivo + "\n");
+                    File.AppendAllText(archivoLog, " [" + DateTime.Now + "] Falla detectada en: " + ipObjetivo + "\n");
                     Console.WriteLine("Se guardó y actualizo el Log de evidencia en tu Escritorio.");
                 }
                 catch (Exception error)
